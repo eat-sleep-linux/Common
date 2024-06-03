@@ -26,3 +26,10 @@ sudo bash -c 'cat > /etc/iwd/main.conf'  <<-'EOF'
 [General]
 AddressRandomization=once
 AddressRandomizationRange=nic
+
+#for wpa
+
+sudo bash -c 'cat > /etc/wpa_supplicant/wpa_supplicant-wlan0.conf <<-'EOF'
+mac_addr=1
+preassoc_mac_addr=1
+gas_rand_mac_addr=1
