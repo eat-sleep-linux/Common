@@ -5,7 +5,7 @@ sudo curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/main/chron
 
 # randomize MAC address & disable static hostname
 
-sudo bash -c 'cat > /etc/NetworkManager/conf.d/00-macrandomize.conf' <<-'EOF'
+sudo bash -c 'cat > /etc/NetworkManager/conf.d/00-macrandomize.conf <<-'EOF'
 [main]
 hostname-mode=none
 
