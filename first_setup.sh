@@ -18,8 +18,6 @@ ethernet.cloned-mac-address=random
 EOF
 
 sudo systemctl restart NetworkManager
-sudo hostnamectl hostname "localhost"
-
 #for iwd
 cat > /etc/iwd/main.conf  <<-'EOF'
 
