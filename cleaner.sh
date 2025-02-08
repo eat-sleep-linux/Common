@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #  Name scipt: FastCleaner 
-#  Release date: 2021-10-20 
-#  Version: 1.0
+#  Release date: 2025-02-08 
+#  Version: 1.1
 #  Copyright (C) DrSheppard | gbog@proton.me
 
 set -e
@@ -17,6 +17,6 @@ sudo flatpak update
 sudo flatpak remove --unused
 sudo flatpak remove --delete-data
 sudo rm /var/lib/snapd/cache/*
-sudo journalctl --vacuum-size=15M
+sudo journalctl --vacuum-size=40M
 sudo journalctl --vacuum-time=1days
 rm -r ~/.cache/thumbnails/*
