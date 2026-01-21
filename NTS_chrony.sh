@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 # NTS instead of NTP
-sudo curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/main/chrony.conf -o /etc/chrony.conf
+sudo curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/refs/heads/main/etc/chrony.conf -o /etc/chrony.conf
