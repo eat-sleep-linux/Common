@@ -13,10 +13,13 @@ LANG=C snap list --all | awk '/disabled/{print $1, $3}' |
     while read snapname revision; do
         sudo snap remove "$snapname" --revision="$revision"
     done
-sudo flatpak update
-sudo flatpak remove --unused
-sudo flatpak remove --delete-data
+flatpak update
+flatpak remove --unused
+flatpak remove --delete-data
+
 sudo rm /var/lib/snapd/cache/*
+
 sudo journalctl --vacuum-size=40M
 sudo journalctl --vacuum-time=1days
+
 rm -r ~/.cache/thumbnails/*
