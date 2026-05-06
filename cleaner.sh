@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #  Name scipt: FastCleaner 
 #  Release date: 2025-02-08 
